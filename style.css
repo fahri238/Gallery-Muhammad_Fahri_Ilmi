@@ -1,0 +1,154 @@
+body {
+	font-family: "Arial", san-serif;
+	background-color: #696969;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+li a{
+	display: block;
+ 	color: white;
+ 	text-align: center;
+ 	padding: 16px 5px;
+ 	margin: 0 20px;
+ 	text-decoration: none;
+}
+.button{
+	list-style: none;
+	display: block;
+	text-decoration: none;
+	overflow: hidden;
+ 	height: 100%;
+	font-family:  "Arial", san-serif;
+	font-size: 1em;
+	font-weight: bold;
+	color: white;
+	background-color:  #62696b;
+	border: 2px solid grey;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.button:focus {
+	color: white;
+	border: 2px solid #dedfe0;
+	box-shadow: 0px 0px 0px 1px rgb(36, 34, 34);
+	animation: anim-shadow .3s forwards;
+}
+@keyframes anim-shadow{
+	100%{
+		box-shadow: 0px 0px 50px 20px  #62696b;
+	}
+}
+
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+ .container {
+ 	max-width: 1100px;
+ 	width: 100%;
+ 	padding: 10px 15px;
+ 	margin: 0 auto;
+	border:  1px solid #222;
+	border-radius: 10%;
+	border: #222;
+ 	box-sizing: border-box;
+ 	text-align: center;
+ }
+
+ .header{
+ 	overflow: hidden;
+ 	height: 100%;
+ 	background-color: grey;
+	box-shadow:1px 2px 90px #222;
+ }
+
+ .header img{
+ 	margin-top: 15px;
+ 	width: 150px;
+ 	height: 150px;
+ 	border-radius: 100%;
+ 	object-fit: cover;
+ }
+
+ ul{
+ 	list-style-type: none;
+ 	margin: 0;
+ 	padding: 0;
+ 	overflow: hidden;
+ 	background-color: #333;
+ }
+ li{
+ 	float: left;
+ 	display: inline;
+	}
+
+ .Gallery{
+ 	margin: 50px 0;
+ 	display: grid;
+ 	grid-template-columns: 1fr 1fr 1fr;
+ 	grid-gap: 25px;
+ }
+
+ .Gallery img{
+ 	width: 100%;
+ 	height: 280px;
+ 	object-fit: cover;
+ 	border: 1px solid rgb(90, 75, 75);
+ 	box-shadow: 1px 2px 3px rgb(36, 34, 34);
+ 	border-radius: 10px;
+ 	box-sizing: border-box;
+ }
+
+ .footer {
+ 	margin: 30px 0;
+ 	overflow: hidden;
+ }
+
+ .footer h2{
+ 	padding: 15px 0;
+ 	border-bottom: 2px solid #222;
+ 	display: inline-block;
+ }
+
+ .social svg{
+ 	max-width: 30px;
+ }
+
+ .social a{
+ 	width: 40px;
+ 	height: 40px;
+ 	display: inline-block;
+ 	border-radius: 100%;
+ }
+
+ .social a.fb{
+ 	color: #0055bf;
+ }
+
+ .social a.twt{
+ 	color: #48a4dd;
+ }
+
+ .social a.ig{
+ 	color: #ff286d;
+ }
+
+ .social a.yt{
+ 	color: #bd0808;
+ }
+
+ /* responsive */
+ @media screen and (max-width: 768px) {
+ 	.Gallery{
+ 		grid-template-columns: 1fr 1fr;
+ 	}
+ 	.Gallery img{
+ 		height: 170px;
+ }
+}
